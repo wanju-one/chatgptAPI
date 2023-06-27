@@ -1,0 +1,1 @@
+curl -X POST -H "Content-Type: application/json" -d '{"message":"주민등록번호 입력창"}' http://localhost:8080/chatgpt-ui/v1/send

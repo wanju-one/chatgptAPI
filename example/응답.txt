@@ -1,0 +1,28 @@
+{
+  "input_message": "주민등록번호 입력창",
+  "output_message": {
+    "created": 1687765860,
+    "usage": {
+      "completion_tokens": 237,
+      "prompt_tokens": 62,
+      "total_tokens": 299
+    },
+    "model": "gpt-3.5-turbo-0301",
+    "id": "chatcmpl-7VbHwVemuuA1ifZXcIK3oKaHUYmDd",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "아래 코드는 Vue 3의 템플릿 문법을 사용하여 주민등록번호 입력창을 생성하는 예시입니다.\n\n```html\n<template>\n  <div>\n    <label for=\"resident-id\">주민등록번호:</label>\n    <input type=\"text\" id=\"resident-id\" v-model=\"residentId\" maxlength=\"13\">\n  </div>\n</template>\n\n<script>\n  export default {\n    data() {\n      return {\n        residentId: ''\n      }\n    }\n  }\n</script>\n```\n\n위 코드에서는 `label` 태그를 사용하여 입력창의 라벨을 표시하고, `input` 태그를 사용하여 실제 입력창을 생성합니다. `v-model` 디렉티브를 사용하여 입력값과 `residentId` 데이터를 양방향 바인딩하고, `maxlength` 속성을 사용하여 입력 가능한 최대 길이를 13자리로 설정합니다."
+        }
+      }
+    ],
+    "object": "chat.completion"
+  },
+  "content": {
+    "code_block": "<template>  <div>    <label for=\"resident-id\">주민등록번호:</label>    <input type=\"text\" id=\"resident-id\" v-model=\"residentId\" maxlength=\"13\">  </div></template><script>  export default {    data() {      return {        residentId: ''      }    }  }</script>",
+    "code_type": "html"
+  }
+}
